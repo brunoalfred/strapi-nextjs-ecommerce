@@ -1,6 +1,5 @@
 - name: Telegram Message Notify
-  # You may pin to the exact commit or the version.
-  # uses: appleboy/telegram-action@12a87fd2ecd83686473a41ea891dcb0896178726
+  
     uses: appleboy/telegram-action@v0.0.8
     with:
         # telegram user
