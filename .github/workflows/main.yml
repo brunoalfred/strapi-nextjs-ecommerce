@@ -1,7 +1,7 @@
 - name: Telegram Message Notify
   
-    uses: appleboy/telegram-action@v0.0.8
-    with:
+      uses: appleboy/telegram-action@v0.0.8
+      with:
         # telegram user
         to: # optional
         # telegram token
