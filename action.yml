@@ -1,8 +1,8 @@
 - name: Telegram Message Notify
   uses: appleboy/telegram-action@v0.0.8
-
   on: [push]
   jobs:
+    
     build:
       name: Build
       runs-on: ubuntu-latest
