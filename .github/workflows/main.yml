@@ -1,34 +1,15 @@
-- name: Telegram Message Notify
-  
-      uses: appleboy/telegram-action@v0.0.8
+name: telegram message
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: send custom message with args
+      uses: appleboy/telegram-action@master
       with:
-        # telegram user
-        to: # optional
-        # telegram token
-        token: # optional
-        # telegram message
-        message: # optional
-        # overwrite the default message template with the contents of the specified file
-        message_file: # optional
-        # support socks5 proxy URL
-        socks5: # optional
-        # send the photo message.
-        photo: # optional
-        # send the document message.
-        document: # optional
-        # send the sticker message.
-        sticker: # optional
-        # send the audio message.
-        audio: # optional
-        # send the voice message.
-        voice: # optional
-        # send the location message.
-        location: # optional
-        # send the venue message.
-        venue: # optional
-        # send the video message.
-        video: # optional
-        # enable debug mode.
-        debug: # optional
-        # message format: markdown or html
-        format: # optional
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        args: The ${{ github.event_name }} event triggered first step.
