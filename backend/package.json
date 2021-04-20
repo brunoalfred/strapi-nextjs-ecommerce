@@ -33,6 +33,6 @@
     "template": "https://github.com/strapi/strapi-template-ecommerce",
     "starter": "https://github.com/strapi/strapi-starter-next-ecommerce"
   },
+ 
   "license": "MIT"
-  
 }
