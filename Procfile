@@ -1,1 +1,1 @@
-web: npm develop
+web: cd ./backend && npm start
