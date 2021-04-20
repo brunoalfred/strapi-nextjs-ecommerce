@@ -1,1 +1,1 @@
-web: cd ./backend && npm start
+web: cd ./backend && yarn && yarn start
