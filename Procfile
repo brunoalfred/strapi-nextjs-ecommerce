@@ -1,1 +1,1 @@
-web: npm develop:backend
+web: npm develop
